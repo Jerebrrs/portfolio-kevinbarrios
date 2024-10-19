@@ -68,6 +68,11 @@ const config: Config = {
         about_shape_dark: "url(/about-dark.svg)",
         dots_light: "url(/dots-light.svg)",
         dots_dark: "url(/dots-dark.svg)",
+        work_projects_bg_light: "url(/work/project-bg-light.png)",
+        work_projects_bg_dark: "url(/work/project-bg-dark.png)",
+        contact_ilust_light: "url(/contact/illustration-light.svg)",
+        contact_ilust_dark: "url(/contact/illustration-dark.svg)",
+
       },
     },
   },

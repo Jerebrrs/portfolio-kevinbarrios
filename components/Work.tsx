@@ -1,9 +1,11 @@
 'use client'
-
-import ProjectCard from "@/components/ProjectCard";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui";
-import { useState } from "react";
-
+import 'swiper/css'
+import 'swiper/css/pagination'
+import { Swiper, SwiperSlide } from 'swiper/react'
+import { Pagination } from 'swiper/modules'
+import { Button } from './ui';
+import Link from 'next/link';
+import ProjectCard from './ProjectCard'
 
 interface ProjectData {
     image?: string;
@@ -53,42 +55,36 @@ const projectData: ProjectData[] = [
     },
 ]
 
-const uniqueCategories: string[] = ["All Projects"].concat(
-    Array.from(new Set(projectData.map((item) => item.category).filter(Boolean) as string[]))
-)
 
-
-export default function Projects() {
-    const [categorias, setCategorias] = useState(uniqueCategories);
-    const [category, setCategory] = useState('All Projects');
-    const filterProjects: ProjectData[] = projectData.filter(project => {
-        return category === 'All Projects' ? project : project.category === category
-    })
+const Work: React.FC<ProjectData> = () => {
     return (
-        <section className="min-h-screen pt-12">
-            <div className="container mx-auto">
-                <h2 className="section-title mb-8 xl:mb-16 text-center mx-auto">Mis Proyectos</h2>
-                <Tabs defaultValue={category} className="mb-24 xl:mb-48">
-                    <TabsList className="w-full grid h-full md:grid-cols-4 lg:max-w-[640px] mb-12 mx-auto md:border dark:border-none">
-                        {categorias.map((category, index) => {
+        <section className='relative mb-12 xl:mb-48'>
+            <div className='container mx-auto'>
+                <div className='max-w-[400px] mx-auto xl:mx-0 text-center xl:text-left mb-12 xl:h-[400px] flex flex-col justify-center'>
+                    <h2 className='section-title mb-4 '>Ultimos Proyectos</h2>
+                    <p className='subtitle mb-8'>Mira los proyectos increibles en los que trabaje.</p>
+                    <Link href={'/projects'}><Button>Mis Proyectos</Button></Link>
+                </div>
+                <div className='xl:max-w-[1000px] xl:absolute right-0 top-0'>
+                    <Swiper className='h-[480px]' slidesPerView={1} breakpoints={{
+                        649: {
+                            slidesPerView: 2,
+                        },
+                    }}
+                        spaceBetween={30} modules={[Pagination]} pagination={{ clickable: true }}>
+                        {projectData.slice(0.4).map((project, index) => {
                             return (
-                                <TabsTrigger onClick={() => setCategory(category)} value={category} key={index}
-                                    className="capitalize w-[162px] md:w-auto">{category}</TabsTrigger>
-                            )
-                        })}
-                    </TabsList>
-                    <div className="text-lg xl:mt-8 grid grid-cols-1 lg:grid-cols-3 gap-4">
-                        {filterProjects.map((project, index) => {
-                            return (
-                                <TabsContent value={category} key={index}>
+                                <SwiperSlide key={index}>
                                     <ProjectCard project={project} />
-                                </TabsContent>
+                                </SwiperSlide>
                             )
                         })}
-                    </div>
-                </Tabs>
+                    </Swiper>
+                </div>
             </div>
+
         </section>
-    );
+    )
 }
 
+export default Work;
