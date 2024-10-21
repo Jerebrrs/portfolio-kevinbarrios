@@ -17,7 +17,7 @@ const Socials: React.FC<SocialProps> = ({ containerStyles = '', iconStyles = '',
     return (
         <div className={`${containerStyles}`}>
             {icons.map((icon, index) => {
-                return <Link href={icon.path} key={index} >
+                return <Link href={icon.path} key={index} target="_blank" >
                     <div className={`${iconStyles}`} >{icon.name}</div>
                 </Link>
             })}

@@ -7,10 +7,12 @@ import { Outfit } from 'next/font/google'
 
 const outfit = Outfit({ subsets: ['latin'] })
 
-
 export const metadata: Metadata = {
   title: "Kevin Barrios",
   description: "Full Stack Web Developer",
+  icons: {
+    icon: '/favicon.ico',  // Ruta al favicon
+  },
 };
 
 export default function RootLayout({
@@ -20,15 +22,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body
-        className={outfit.className}
-      >
+      <body className={outfit.className}>
         <ThemeProvider attribute='class' defaultTheme='light'>
           <Header />
           {children}
           <Footer />
         </ThemeProvider>
-
       </body>
     </html>
   );

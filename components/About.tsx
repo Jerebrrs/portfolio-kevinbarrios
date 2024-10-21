@@ -40,19 +40,19 @@ const qualificationData: QualificationSection[] = [
         title: 'Educacion',
         data: [
             {
-                academia: 'Soy Henry',
-                role: 'Full Stack Web Developer',
-                years: '2023-2024',
-            },
-            {
-                academia: 'Alura Latam + Oracle Next Educacion',
-                role: 'Desarrollador Backend',
-                years: '2024-Actualidad',
+                academia: 'Alura Latam + Oracle',
+                role: 'Desarrollador Backend Java + Oracle',
+                years: 'Jun 2024 - Actualidad.',
             },
             {
                 academia: 'Soy Henry',
-                role: 'Full Stack Web Developer',
-                years: '2023-2024',
+                role: 'Desarrollador Web Full Stack',
+                years: 'Sep 2023 - Abr 2024',
+            },
+            {
+                academia: 'Argentina Programa 4.0',
+                role: 'Backend Developer',
+                years: 'Ene 2023 - Jul 2023',
             },
         ],
     },
@@ -60,19 +60,24 @@ const qualificationData: QualificationSection[] = [
         title: 'Experiencia',
         data: [
             {
+                company: 'J&J Software',
+                role: 'Full Stack Web Developer',
+                years: 'Jul 2024 - Actualidad.',
+            },
+            {
                 company: 'Cubix & Bets Casino',
                 role: 'Full Stack Web Developer',
-                years: '2023-2024',
+                years: 'Jun 2024- Ags 2024',
             },
             {
                 company: 'No Country',
-                role: 'Desarrollador Backend',
-                years: '2024-Actualidad',
+                role: 'Desarrollador Web Backend',
+                years: 'May 2024- Ags 2024',
             },
             {
                 company: 'Soy Henry',
                 role: 'Full Stack Web Developer',
-                years: '2023-2024',
+                years: 'Sep 2023- Abr2024',
             },
         ],
     },
@@ -80,36 +85,29 @@ const qualificationData: QualificationSection[] = [
 
 const skillsData: QualificationSection[] = [
     {
-        title: 'Frontend',
+        title: 'Backend',
         data: [
-            { name: 'React', image: '/images/react-logo.png' },
-            { name: 'Redux', image: '/images/redux-logo.png' },
+            { name: 'Nest',  image: '/nestjs.png' },
+            {name:'Java', image:'/skills/java.png'},
+            {name:'Typescript', image:'/skills/typescript.png'},
+            {name:'Javascipt', image:'/skills/javascript.png'},
+            {name:'Typescript', image:'/skills/Graphql.png'},
+            {name:'Postgres', image:'/skills/postgres.png'},
+            {name:'MongoDb', image:'/skills/mongo.png'},
+            {name:'Docker', image:'/skills/docker.png'},
+            {name:'Kubernetes', image:'/skills/kubernetes.png'},
+            {name:'Aws', image:'/skills/aws.png'},
         ],
     },
     {
-        title: 'Backend',
+        title: 'Frontend',
         data: [
-            { name: 'NestJS', image: '/nestjs.png' },
-            { name: 'NestJS', image: '/nestjs.png' },
-            { name: 'NestJS', image: '/nestjs.png' },
-            { name: 'NestJS', image: '/nestjs.png' },
-            { name: 'NestJS', image: '/nestjs.png' },
-            { name: 'NestJS', image: '/nestjs.png' },
-            { name: 'NestJS', image: '/nestjs.png' },
-            { name: 'NestJS', image: '/nestjs.png' },
-            { name: 'NestJS', image: '/nestjs.png' },
-            { name: 'NestJS', image: '/nestjs.png' },
-            { name: 'NestJS', image: '/nestjs.png' },
-            { name: 'NestJS', image: '/nestjs.png' },
-            { name: 'NestJS', image: '/nestjs.png' },
-            { name: 'NestJS', image: '/nestjs.png' },
-            { name: 'NestJS', image: '/nestjs.png' },
-            { name: 'NestJS', image: '/nestjs.png' },
-            { name: 'NestJS', image: '/nestjs.png' },
-            { name: 'NestJS', image: '/nestjs.png' },
-            { name: 'NestJS', image: '/nestjs.png' },
-            { name: 'NestJS', image: '/nestjs.png' },
-            { name: 'NestJS', image: '/nestjs.png' },
+            { name: 'NextJs',  image: '/skills/nextjs.png' },
+            {name:'React', image:'/skills/react.png'},
+            {name:'Redux', image:'/skills/redux.png'},
+            {name:'Talwing', image:'/skills/talwing.png'},
+            {name:'HTML', image:'/skills/html.png'},
+            {name:'CSS', image:'/skills/css.png'},
         ],
     },
 ];
@@ -133,17 +131,16 @@ const About: React.FC = () => {
                         <Tabs defaultValue='personal'>
                             <TabsList className='w-full grid xl:grid-cols-3 xl:max-w-[520px] xl:border dark:border-none'>
                                 <TabsTrigger className='w-[162px] xl:w-auto' value='personal'>Informacion Personal</TabsTrigger>
-                                <TabsTrigger className='w-[162px] xl:w-auto' value='qualifications'>Cualidades</TabsTrigger>
+                                <TabsTrigger className='w-[162px] xl:w-auto' value='qualifications'>Carrera Profesional</TabsTrigger>
                                 <TabsTrigger className='w-[162px] xl:w-auto' value='skills'>Skills</TabsTrigger>
                             </TabsList>
                             <div className='text-lg mt-12 xl:mt-8'>
                                 <TabsContent value='personal'>
                                     <div className='text-center xl:text-left'>
-                                        <h3 className='h3 mb-4'>Soy Full Stack Developer, apasionado por seguir conociendo y aprendiendo.</h3>
+                                        <h3 className='h3 mb-4'>Soy Full Stack Developer y me apasiona seguir aprendiendo y mejorando.</h3>
                                         <p className='subtitle max-w-xl mx-auto xl:max-0'>
-                                            Cuento con sólidos conocimientos en diversas tecnologías como Html, Css, Git/Git hub, así como frameworks Frontend
-                                            como React/Redux. Mi enfoque principal se centra en el BackEnd donde tengo experiencia con tecnologías como Typescript,
-                                            Node.js, Express.js, SQL, Docker, MongoDb.
+                                            Tengo experiencia tanto en el Frontend como en el Backend.
+                                            En el Frontend, he trabajado con tecnologías como Next.js, React, Redux, y Tailwind CSS, entre otras. Sin embargo, mi enfoque principal es el Backend, donde tengo experiencia con Node.js, NestJS, bases de datos relacionales y no relacionales, Docker, Kubernetes, entre otras herramientas. Actualmente, estoy profundizando mis conocimientos en Java para enfocarme aún más en el desarrollo Backend.
                                         </p>
                                         <div className="grid xl:grid-cols-2 gap-4 mb-12">
                                             {infoData.map((item, index) => {
@@ -211,7 +208,6 @@ const About: React.FC = () => {
                                                     <div className='flex flex-col gap-y-8'>
                                                         {getData(qualificationData, 'Educacion')?.data.map((item, index) => {
                                                             const { role, years, academia } = item;
-                                                            console.log(academia);
 
                                                             return (
                                                                 <div key={index} className='flex gap-x-8 group'> {/* Cambia el fondo para modo oscuro */}
@@ -245,24 +241,33 @@ const About: React.FC = () => {
                                     <div className='text-center xl:text-left'>
                                         <h3 className='h3 mb-8'>Tecnologias de uso diario</h3>
                                         <div className='mb-16'>
-                                            <h4 className='text-xl font-semibold mb-2'>Skills</h4>
+                                            <h4 className='text-xl font-semibold mb-2'>Backend</h4>
                                             <div className='border-b border-border mb-4'></div>
-                                            <div>
-                                                {getData(skillsData, 'Frontend')?.data.map((item, index) => {
-                                                    const { name } = item;
+                                            <div className='grid grid-cols-3 md:grid-cols-4 xl:grid-cols-6 gap-y-3 justify-center xl:justify-start'>
+                                            {getData(skillsData, 'Backend')?.data.map((item, index) => {
+                                                    const { image } = item;
                                                     return (
-                                                        <div className='w-2/4 text-center xl:text-left mx-auto xl:mx-0' key={index}>
-                                                            <div>{name}</div>
-                                                        </div>
-                                                    )
+                                                        image ? (
+                                                            <div key={index} className="flex justify-center">
+                                                                <Image
+                                                                    src={image}
+                                                                    width={60}
+                                                                    height={100}
+                                                                    alt={item.name || 'Skill icon'}
+                                                                    className="drop-shadow-md hover:drop-shadow-xl transition-transform transform hover:scale-105 duration-300 ease-in-out"
+                                                                />
+                                                                
+                                                            </div>
+                                                        ) : null
+                                                    );
                                                 })}
                                             </div>
                                         </div>
                                         <div>
-                                            <h4 className='text-xl font-semibold mb-2'>Tools</h4>
+                                            <h4 className='text-xl font-semibold mb-2'>Frontend</h4>
                                             <div className='border-b border-border mb-4'></div>
                                             <div className='grid grid-cols-2 md:grid-cols-4 xl:grid-cols-6 gap-4 justify-center xl:justify-start'>
-                                                {getData(skillsData, 'Backend')?.data.map((item, index) => {
+                                                {getData(skillsData, 'Frontend')?.data.map((item, index) => {
                                                     const { image } = item;
                                                     return (
                                                         image ? (
@@ -272,7 +277,7 @@ const About: React.FC = () => {
                                                                     width={48}
                                                                     height={48}
                                                                     alt={item.name || 'Skill icon'}
-                                                                     className="drop-shadow-md hover:drop-shadow-xl transition-transform transform hover:scale-105 duration-300 ease-in-out"
+                                                                    className="drop-shadow-md hover:drop-shadow-xl transition-transform transform hover:scale-105 duration-300 ease-in-out"
                                                                 />
                                                             </div>
                                                         ) : null
