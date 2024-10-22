@@ -21,7 +21,7 @@ const projectData: ProjectData[] = [
         category: 'Fullstack',
         name: "Cubix & Bets",
         subtitle: "Casino Cubix & Bets - Plataforma de casino con criptomonedas",
-        description: "En este proyecto, participé en la creación de una plataforma de juegos de casino donde las transacciones se realizaban con criptomonedas. Mi principal rol fue en el desarrollo del Backend, donde me encargué de construir el flujo de creación de usuarios. Esto incluía la integración con la plataforma de juegos, permitiendo la creación de usuarios tanto en la plataforma externa como en nuestra base de datos local. Además, implementé medidas de seguridad en los endpoints, aplicándolas de forma global en todo el proyecto.También incorporé bibliotecas de tipado fuerte en el Backend para prevenir errores y mejorar el manejo de las respuestas, asegurando así una mayor robustez en el sistema.Adicionalmente, fui responsable de crear los tests de prueba y usabilidad, garantizando la fiabilidad y calidad de la plataforma.En el Frontend, mi contribución fue principalmente a nivel de lógica, donde desarrollé funciones que mejoraron la fluidez y usabilidad de la plataforma.",
+        description: "Plataforma de juegos de casino donde las transacciones se realizaban con criptomonedas. Mi principal rol fue en el desarrollo del Backend, donde me encargué de construir el flujo de creación de usuarios. Esto incluía la integración con la plataforma de juegos, permitiendo la creación de usuarios tanto en la plataforma externa como en nuestra base de datos local. Además, implementé medidas de seguridad en los endpoints, aplicándolas de forma global en todo el proyecto.También incorporé bibliotecas de tipado fuerte en el Backend para prevenir errores y mejorar el manejo de las respuestas, asegurando así una mayor robustez en el sistema.Adicionalmente, fui responsable de crear los tests de prueba y usabilidad, garantizando la fiabilidad y calidad de la plataforma.En el Frontend, mi contribución fue principalmente a nivel de lógica, donde desarrollé funciones que mejoraron la fluidez y usabilidad de la plataforma.",
         link: 'https://casino-cubix.vercel.app/',
         github: 'https://github.com/Jerebrrs/casino-cubix'
 
@@ -50,8 +50,8 @@ const projectData: ProjectData[] = [
         image: '/work/wearfashion.png',
         category: 'Fullstack',
         name: "Wearfashion",
-        subtitle: "Ecommerce de ropa Urbana.",
-        description: "Ecommerce de ropa Urbana.",
+        subtitle: "E-commerce innovador basado en la moda urbana",
+        description: "E-commerce innovador Wearfashion basado en la moda urbana. Donde cuenta con un Landing atractivo, un home de productos con un panel de filtros . Cada producto cuenta con un detalle donde podes elegir talle y cantidad y sumarlo al carrito. Para que una vez logeado puedas realizar tu compra.Mi función fue en la construcción del backend, donde logramos desarrollar una aplicación sólida con buenas prácticas. Utilizamos las siguientes tecnologías: JavaScript, Node.js, Express, Sequelize, PostgreSQL, Cloudinary y Multer. También llevamos a cabo el despliegue en la plataforma Realway. Metodología Scrum en el ámbito de desarrollo, roles definidos, comunicación grupal, inspección y adaptación del código.",
         link: 'https://wearfashion.vercel.app',
         github: 'https://github.com/DanielJulianCardenasMora/proyecto_grupal_henry'
 

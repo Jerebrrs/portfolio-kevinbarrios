@@ -87,27 +87,27 @@ const skillsData: QualificationSection[] = [
     {
         title: 'Backend',
         data: [
-            { name: 'Nest',  image: '/nestjs.png' },
-            {name:'Java', image:'/skills/java.png'},
-            {name:'Typescript', image:'/skills/typescript.png'},
-            {name:'Javascipt', image:'/skills/javascript.png'},
-            {name:'Typescript', image:'/skills/Graphql.png'},
-            {name:'Postgres', image:'/skills/postgres.png'},
-            {name:'MongoDb', image:'/skills/mongo.png'},
-            {name:'Docker', image:'/skills/docker.png'},
-            {name:'Kubernetes', image:'/skills/kubernetes.png'},
-            {name:'Aws', image:'/skills/aws.png'},
+            { name: 'Nest', image: '/nestjs.png' },
+            { name: 'Java', image: '/skills/java.png' },
+            { name: 'Typescript', image: '/skills/typescript.png' },
+            { name: 'Javascipt', image: '/skills/javascript.png' },
+            { name: 'Typescript', image: '/skills/Graphql.png' },
+            { name: 'Postgres', image: '/skills/postgres.png' },
+            { name: 'MongoDb', image: '/skills/mongo.png' },
+            { name: 'Docker', image: '/skills/docker.png' },
+            { name: 'Kubernetes', image: '/skills/kubernetes.png' },
+            { name: 'Aws', image: '/skills/aws.png' },
         ],
     },
     {
         title: 'Frontend',
         data: [
-            { name: 'NextJs',  image: '/skills/nextjs.png' },
-            {name:'React', image:'/skills/react.png'},
-            {name:'Redux', image:'/skills/redux.png'},
-            {name:'Talwing', image:'/skills/talwing.png'},
-            {name:'HTML', image:'/skills/html.png'},
-            {name:'CSS', image:'/skills/css.png'},
+            { name: 'NextJs', image: '/skills/nextjs.png' },
+            { name: 'React', image: '/skills/react.png' },
+            { name: 'Redux', image: '/skills/redux.png' },
+            { name: 'Talwing', image: '/skills/talwing.png' },
+            { name: 'HTML', image: '/skills/html.png' },
+            { name: 'CSS', image: '/skills/css.png' },
         ],
     },
 ];
@@ -244,19 +244,20 @@ const About: React.FC = () => {
                                             <h4 className='text-xl font-semibold mb-2'>Backend</h4>
                                             <div className='border-b border-border mb-4'></div>
                                             <div className='grid grid-cols-3 md:grid-cols-4 xl:grid-cols-6 gap-y-3 justify-center xl:justify-start'>
-                                            {getData(skillsData, 'Backend')?.data.map((item, index) => {
+                                                {getData(skillsData, 'Backend')?.data.map((item, index) => {
                                                     const { image } = item;
                                                     return (
                                                         image ? (
                                                             <div key={index} className="flex justify-center">
-                                                                <Image
-                                                                    src={image}
-                                                                    width={60}
-                                                                    height={100}
-                                                                    alt={item.name || 'Skill icon'}
-                                                                    className="drop-shadow-md hover:drop-shadow-xl transition-transform transform hover:scale-105 duration-300 ease-in-out"
-                                                                />
-                                                                
+                                                                <div className="relative w-[48px] h-[48px]">
+                                                                    <Image
+                                                                        src={image}
+                                                                        layout="fill"
+                                                                        objectFit="contain" 
+                                                                        alt={item.name || 'Skill icon'}
+                                                                        className="drop-shadow-md hover:drop-shadow-xl transition-transform transform hover:scale-105 duration-300 ease-in-out"
+                                                                    />
+                                                                </div>
                                                             </div>
                                                         ) : null
                                                     );
@@ -272,14 +273,17 @@ const About: React.FC = () => {
                                                     return (
                                                         image ? (
                                                             <div key={index} className="flex justify-center">
+                                                            <div className="relative w-[48px] h-[48px]">
                                                                 <Image
                                                                     src={image}
-                                                                    width={48}
-                                                                    height={48}
+                                                                    layout="fill"
+                                                                    objectFit="contain" 
                                                                     alt={item.name || 'Skill icon'}
                                                                     className="drop-shadow-md hover:drop-shadow-xl transition-transform transform hover:scale-105 duration-300 ease-in-out"
                                                                 />
                                                             </div>
+
+                                                        </div>
                                                         ) : null
                                                     );
                                                 })}
