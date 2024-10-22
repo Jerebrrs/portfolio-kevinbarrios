@@ -137,7 +137,7 @@ const About: React.FC = () => {
                             <div className='text-lg mt-12 xl:mt-8'>
                                 <TabsContent value='personal'>
                                     <div className='text-center xl:text-left'>
-                                        <h3 className='h3 mb-4'>Soy Full Stack Developer y me apasiona seguir aprendiendo y mejorando.</h3>
+                                        <h3 className='h3 mb-4'>Desarrollador Web Full Stack Developer</h3>
                                         <p className='subtitle max-w-xl mx-auto xl:max-0'>
                                             Tengo experiencia tanto en el Frontend como en el Backend.
                                             En el Frontend, he trabajado con tecnologías como Next.js, React, Redux, y Tailwind CSS, entre otras. Sin embargo, mi enfoque principal es el Backend, donde tengo experiencia con Node.js, NestJS, bases de datos relacionales y no relacionales, Docker, Kubernetes, entre otras herramientas. Actualmente, estoy profundizando mis conocimientos en Java para enfocarme aún más en el desarrollo Backend.
