@@ -10,9 +10,9 @@ interface NavProps {
 }
 
 const links = [
-  { path: '/', name: 'home' },
-  { path: '/projects', name: 'my projects' },
-  { path: '/contact', name: 'contact' }
+  { path: '/', name: 'Home' },
+  { path: '/projects', name: 'Mis Proyectos' },
+  { path: '/contact', name: 'Contacto' }
 ];
 
 const Nav: React.FC<NavProps> = ({ containerStyles = '', linkStyles = '', underLineStyles = '' }) => {
@@ -28,7 +28,7 @@ const Nav: React.FC<NavProps> = ({ containerStyles = '', linkStyles = '', underL
                 animate={{ y: 0 }}
                 transition={{ type: 'tween' }}
                 layoutId='underline'
-                className={`${underLineStyles}`} // Estilos aplicados correctamente a la línea
+                className={`${underLineStyles}`} 
               />
             )}
             {link.name}
