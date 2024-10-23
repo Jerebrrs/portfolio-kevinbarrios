@@ -1,6 +1,6 @@
 
 import Link from 'next/link'
-import { RiArrowDownSLine, RiBriefcase2Fill, RiTodoFill } from 'react-icons/ri'
+import { RiArrowDownSLine, RiAwardFill, RiBriefcase2Fill, RiTodoFill } from 'react-icons/ri'
 import { Button } from './ui'
 import { Download, Send } from 'lucide-react'
 import Socials from './Socials'
@@ -38,9 +38,9 @@ const Hero = () => {
                     </div>
 
                     <div className='hidden xl:flex relative'>
-                        <Badge containerStyles='absolute top-[24%] -left-[37rem]' icon={<RiBriefcase2Fill />} endCountNum={1} badgeText='Años de experiencia.' endCountText=' +' />
-                        <Badge containerStyles='absolute top-[80%] -left-[33rem]' icon={<RiTodoFill />} endCountNum={7} badgeText='Proyectos Finalizados.' endCountText=' +' />
-                        <Badge containerStyles='absolute top-[55%] -right-10' icon={<RiTodoFill />} endCountNum={7} badgeText='Certificados' endCountText=' +' />
+                        <Badge containerStyles='absolute top-[24%] -left-[37rem]' icon={<RiBriefcase2Fill />} endCountNum={2} badgeText='Años de experiencia.' endCountText=' +' />
+                        <Badge containerStyles='absolute top-[80%] -left-[33rem]' icon={<RiTodoFill />} endCountNum={6} badgeText='Proyectos Finalizados.' endCountText=' +' />
+                        <Badge containerStyles='absolute top-[55%] -right-10' icon={<RiAwardFill />} endCountNum={7} badgeText='Certificados' endCountText=' +' />
                         <div className='bg-hero_shape_light dark:bg-hero_shape_dark w-[500px] h-[500px] bg-no-repeat absolute -top-1 -right-2'>
                             <DevImg containerStyles='bg-hero_shape w-[510px] h-[462px] bg-no-repeat' ImgSrc='/perfil-remove.png' />
                         </div>
