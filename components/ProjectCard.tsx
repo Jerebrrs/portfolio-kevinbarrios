@@ -35,9 +35,12 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
                     </div>
                 </div>
             </CardHeader>
-            <div className="h-full px-8 py-6">
+            <div className="h-full justify-center px-8 py-6">
                 <Badge className="uppercase text-sm font-medium mb-2 absolute top-4 left-5">{project.category}</Badge>
-                <Details project={project} />
+                <div className="flex justify-center">
+                <Details project={project}  />
+                </div>
+               
             </div>
         </Card>
     );

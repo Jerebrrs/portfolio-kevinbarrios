@@ -6,6 +6,11 @@ export interface ProjectData {
   description?: string;
   link?: string;
   github?: string;
+  skills?: SkillImage[];
+}
+
+export interface SkillImage {
+  image: string;
 }
 
 export const projectData: ProjectData[] = [
@@ -18,6 +23,15 @@ export const projectData: ProjectData[] = [
       "Plataforma de juegos de casino donde las transacciones se realizaban con criptomonedas. Mi principal rol fue en el desarrollo del Backend, donde me encargué de construir el flujo de creación de usuarios. Esto incluía la integración con la plataforma de juegos, permitiendo la creación de usuarios tanto en la plataforma externa como en nuestra base de datos local. Además, implementé medidas de seguridad en los endpoints, aplicándolas de forma global en todo el proyecto.También incorporé bibliotecas de tipado fuerte en el Backend para prevenir errores y mejorar el manejo de las respuestas, asegurando así una mayor robustez en el sistema.Adicionalmente, fui responsable de crear los tests de prueba y usabilidad, garantizando la fiabilidad y calidad de la plataforma.En el Frontend, mi contribución fue principalmente a nivel de lógica, donde desarrollé funciones que mejoraron la fluidez y usabilidad de la plataforma.",
     link: "https://casino-cubix.vercel.app/",
     github: "https://github.com/Jerebrrs/casino-cubix",
+    skills: [
+      { image: "/skills/react.png" },
+      { image: "/skills/talwing.png" },
+      { image: "/skills/react.png" },
+      { image: "/skills/redux.png" },
+      { image: "/skills/javascript.png" },
+      { image: "/skills/nodejs.png" },
+      { image: "/skills/postgres.png" },
+    ],
   },
   {
     image: "/work/microservices.png",
@@ -28,6 +42,16 @@ export const projectData: ProjectData[] = [
       "Este ecommerce está diseñado con una arquitectura de microservicios, lo que garantiza escalabilidad y rendimiento. Utilizamos NATS Server para una comunicación eficiente entre servicios y combinamos bases de datos relacionales y no relacionales para una gestión de datos óptima. Cada microservicio se despliega en contenedores Docker y se orquesta con Kubernetes. Tiene integrado Stripe como pasarela de pagos para ofrecer transacciones seguras y rápidas. Este Backend fue realizado con NestJs.",
     link: "https://github.com/Microservice-NestJs-App",
     github: "https://github.com/Microservice-NestJs-App",
+    skills: [
+      { image: "/skills/nestjs.png" },
+      { image: "/skills/nats.png" },
+      { image: "/skills/typescript.png" },
+      { image: "/skills/postgres.png" },
+      { image: "/skills/mongo.png" },
+      { image: "/skills/docker.png" },
+      { image: "/skills/kubernetes.png" },
+      { image: "/skills/googlecloud.png" },
+    ],
   },
   {
     image: "/work/donando.png",
@@ -39,6 +63,14 @@ export const projectData: ProjectData[] = [
     link: "https://donando.vercel.app",
     github:
       "https://github.com/Jerebrrs/back-no-country-c18-03--m-nodeObjetivo",
+      skills: [
+        { image: "/skills/react.png" },
+        { image: "/skills/talwing.png" },
+        { image: "/skills/redux.png" },
+        { image: "/skills/javascript.png" },
+        { image: "/skills/nodejs.png" },
+        { image: "/skills/postgres.png" },
+      ],
   },
   {
     image: "/work/foodapp.png",
@@ -49,6 +81,15 @@ export const projectData: ProjectData[] = [
       "Esta Food App está construida con NestJS y actúa como un receptor de pedidos, organizando los productos según su categoría. Este sistema innovador permite realizar órdenes de manera rápida sin necesidad de iniciar sesión. Además, si el usuario está registrado, sus datos se autocompletan automáticamente. También ofrece imprecion de comandas y como reportes personalizados, generados con PDFMake, para un mejor control y escalabilidad. La app está conectada a una base de datos relacional como PostgreSQL, y su versión y escalabilidad son gestionadas mediante Docker.",
     link: "https://github.com/Microservice-NestJs-App",
     github: "https://github.com/Microservice-NestJs-App",
+    skills: [
+      { image: "/skills/nestjs.png" },
+      { image: "/skills/typescript.png" },
+      { image: "/skills/nodejs.png" },
+      { image: "/skills/prisma.png" },
+      { image: "/skills/postgres.png" },
+      { image: "/skills/docker.png" },
+      { image: "/skills/kubernetes.png" },
+    ],
   },
   {
     image: "/work/liga.png",
@@ -59,6 +100,13 @@ export const projectData: ProjectData[] = [
       "Proyecto Futbol La Paz, proyecto propio construido desde 0. El objetivo del proyecto es crear un diario digital que informe sobre el futbol local de la region de La Paz, Entre Rios.Esta web en principio permite leer articulos periodisticos de diferentes comunicadores de la region. Actualmente esta en construccion dandoles nuevas funcionalidades.Tecnologias:Frontend: Javascript, React/Vite, Redux, HTML. CSS, Vercel.Backend:Typescript, Node.js , Express, Sequelize, PostgreSQL, Bcrypt, jsonwebtoken,Multer,Cloudinary, Realway.",
     link: "https://lapazfutbol.vercel.app",
     github: "https://github.com/Jerebrrs/backend-Lpf",
+    skills: [
+      { image: "/skills/react.png" },
+      { image: "/skills/redux.png" },
+      { image: "/skills/javascript.png" },
+      { image: "/skills/nodejs.png" },
+      { image: "/skills/postgres.png" },
+    ],
   },
   {
     image: "/work/wearfashion.png",
@@ -69,6 +117,27 @@ export const projectData: ProjectData[] = [
       "E-commerce innovador Wearfashion basado en la moda urbana. Donde cuenta con un Landing atractivo, un home de productos con un panel de filtros . Cada producto cuenta con un detalle donde podes elegir talle y cantidad y sumarlo al carrito. Para que una vez logeado puedas realizar tu compra.Mi función fue en la construcción del backend, donde logramos desarrollar una aplicación sólida con buenas prácticas. Utilizamos las siguientes tecnologías: JavaScript, Node.js, Express, Sequelize, PostgreSQL, Cloudinary y Multer. También llevamos a cabo el despliegue en la plataforma Realway. Metodología Scrum en el ámbito de desarrollo, roles definidos, comunicación grupal, inspección y adaptación del código.",
     link: "https://wearfashion.vercel.app",
     github: "https://github.com/DanielJulianCardenasMora/proyecto_grupal_henry",
+    skills: [
+      { image: "/skills/react.png" },
+      { image: "/skills/redux.png" },
+      { image: "/skills/javascript.png" },
+      { image: "/skills/nodejs.png" },
+      { image: "/skills/postgres.png" },
+    ],
+  },
+  {
+    image: "/work/conversor.png",
+    category: "Java",
+    name: "Conversor de Monedas",
+    subtitle: "Conversor de Monedas en tiempo real.",
+    description:
+      "Proyecto backend en Java que consume una API para obtener cotizaciones de divisas en tiempo real. Permite ingresar un monto a convertir, y devuelve el valor convertido en la divisa seleccionada.",
+    link: "https://github.com/Jerebrrs/Conversor-De-Monedas-Java",
+    github: "https://github.com/Jerebrrs/Conversor-De-Monedas-Java",
+    skills: [
+      { image: "/skills/java.png" },
+    
+    ],
   },
 ];
 
@@ -88,8 +157,14 @@ export const certificateData: CertificateData[] = [
   },
   {
     instituto: "Alura",
-    name: "Full Stack Web Developer",
+    name: "Java Orientada a Objetos",
     link: "https://app.aluracursos.com/user/kevinjeremiasbarrios/degree-programacion-primeros-pasos-grupo7-one-15788/certificate",
+    image: "/certificate/alura3.png",
+  },
+  {
+    instituto: "Alura",
+    name: "Full Stack Web Developer",
+    link: "https://app.aluracursos.com/user/kevinjeremiasbarrios/degree-java-grupo7-one-15797/certificate",
     image: "/certificate/alura1.png",
   },
   {
@@ -115,5 +190,103 @@ export const certificateData: CertificateData[] = [
     name: "Full Stack Web Developer",
     link: "https://app.aluracursos.com/user/kevinjeremiasbarrios/degree-programacion-primeros-pasos-15697/certificate",
     image: "/certificate/alura2.png",
+  },
+];
+
+export interface InfoData {
+  text?: string;
+  icon?: React.ReactNode; // El tipo adecuado para un elemento JSX
+}
+
+// Define el tipo para los datos de educación y experiencia
+export interface QualificationItem {
+  academia?: string;
+  company?: string;
+  name?: string;
+  image?: string;
+  role?: string;
+  years?: string;
+}
+
+export interface QualificationSection {
+  title: string;
+  data: QualificationItem[];
+}
+
+export const qualificationData: QualificationSection[] = [
+  {
+    title: "Educacion",
+    data: [
+      {
+        academia: "Alura Latam + Oracle",
+        role: "Desarrollador Backend Java + Oracle",
+        years: "Jun 2024 - Actualidad.",
+      },
+      {
+        academia: "Soy Henry",
+        role: "Desarrollador Web Full Stack",
+        years: "Sep 2023 - Abr 2024",
+      },
+      {
+        academia: "Argentina Programa 4.0",
+        role: "Backend Developer",
+        years: "Ene 2023 - Jul 2023",
+      },
+    ],
+  },
+  {
+    title: "Experiencia",
+    data: [
+      {
+        company: "J&J Software",
+        role: "Full Stack Web Developer",
+        years: "Jul 2024 - Actualidad.",
+      },
+      {
+        company: "Cubix & Bets Casino",
+        role: "Full Stack Web Developer",
+        years: "Jun 2024- Ags 2024",
+      },
+      {
+        company: "No Country",
+        role: "Desarrollador Web Backend",
+        years: "May 2024- Ags 2024",
+      },
+      {
+        company: "Soy Henry",
+        role: "Full Stack Web Developer",
+        years: "Sep 2023- Abr2024",
+      },
+    ],
+  },
+];
+
+export const skillsData: QualificationSection[] = [
+  {
+    title: "Backend",
+    data: [
+      { name: "Nest", image: "/nestjs.png" },
+      { name: "NodeJs", image: "/skills/nodejs.png" },
+      { name: "Java", image: "/skills/java.png" },
+      { name: "Typescript", image: "/skills/typescript.png" },
+      { name: "Javascipt", image: "/skills/javascript.png" },
+      { name: "Typescript", image: "/skills/Graphql.png" },
+      { name: "Postgres", image: "/skills/postgres.png" },
+      { name: "MongoDb", image: "/skills/mongo.png" },
+      { name: "Docker", image: "/skills/docker.png" },
+      { name: "Kubernetes", image: "/skills/kubernetes.png" },
+      { name: "Aws", image: "/skills/aws.png" },
+    ],
+  },
+  {
+    title: "Frontend",
+    data: [
+      { name: "NextJs", image: "/skills/nextjs.png" },
+      { name: "React", image: "/skills/react.png" },
+      { name: "Redux", image: "/skills/redux.png" },
+      { name: "Talwing", image: "/skills/talwing.png" },
+      { name: "HTML", image: "/skills/html.png" },
+      { name: "CSS", image: "/skills/css.png" },
+    ],
   },
 ];

@@ -3,6 +3,7 @@ import React from 'react';
 import DevImg from './DevImg';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from './ui/tabs';
 import Image from 'next/image';
+import { QualificationSection, skillsData } from '@/app/data/data';
 
 // Define el tipo para la información personal
 interface InfoData {
@@ -11,19 +12,19 @@ interface InfoData {
 }
 
 // Define el tipo para los datos de educación y experiencia
-interface QualificationItem {
-    academia?: string;
-    company?: string;
-    name?: string;
-    image?: string;
-    role?: string;
-    years?: string;
-}
+// interface QualificationItem {
+//     academia?: string;
+//     company?: string;
+//     name?: string;
+//     image?: string;
+//     role?: string;
+//     years?: string;
+// }
 
-interface QualificationSection {
-    title: string;
-    data: QualificationItem[];
-}
+// interface QualificationSection {
+//     title: string;
+//     data: QualificationItem[];
+// }
 
 
 const infoData: InfoData[] = [
@@ -83,34 +84,34 @@ const qualificationData: QualificationSection[] = [
     },
 ];
 
-const skillsData: QualificationSection[] = [
-    {
-        title: 'Backend',
-        data: [
-            { name: 'Nest', image: '/nestjs.png' },
-            { name: 'Java', image: '/skills/java.png' },
-            { name: 'Typescript', image: '/skills/typescript.png' },
-            { name: 'Javascipt', image: '/skills/javascript.png' },
-            { name: 'Typescript', image: '/skills/Graphql.png' },
-            { name: 'Postgres', image: '/skills/postgres.png' },
-            { name: 'MongoDb', image: '/skills/mongo.png' },
-            { name: 'Docker', image: '/skills/docker.png' },
-            { name: 'Kubernetes', image: '/skills/kubernetes.png' },
-            { name: 'Aws', image: '/skills/aws.png' },
-        ],
-    },
-    {
-        title: 'Frontend',
-        data: [
-            { name: 'NextJs', image: '/skills/nextjs.png' },
-            { name: 'React', image: '/skills/react.png' },
-            { name: 'Redux', image: '/skills/redux.png' },
-            { name: 'Talwing', image: '/skills/talwing.png' },
-            { name: 'HTML', image: '/skills/html.png' },
-            { name: 'CSS', image: '/skills/css.png' },
-        ],
-    },
-];
+// const skillsData: QualificationSection[] = [
+//     {
+//         title: 'Backend',
+//         data: [
+//             { name: 'Nest', image: '/nestjs.png' },
+//             { name: 'Java', image: '/skills/java.png' },
+//             { name: 'Typescript', image: '/skills/typescript.png' },
+//             { name: 'Javascipt', image: '/skills/javascript.png' },
+//             { name: 'Typescript', image: '/skills/Graphql.png' },
+//             { name: 'Postgres', image: '/skills/postgres.png' },
+//             { name: 'MongoDb', image: '/skills/mongo.png' },
+//             { name: 'Docker', image: '/skills/docker.png' },
+//             { name: 'Kubernetes', image: '/skills/kubernetes.png' },
+//             { name: 'Aws', image: '/skills/aws.png' },
+//         ],
+//     },
+//     {
+//         title: 'Frontend',
+//         data: [
+//             { name: 'NextJs', image: '/skills/nextjs.png' },
+//             { name: 'React', image: '/skills/react.png' },
+//             { name: 'Redux', image: '/skills/redux.png' },
+//             { name: 'Talwing', image: '/skills/talwing.png' },
+//             { name: 'HTML', image: '/skills/html.png' },
+//             { name: 'CSS', image: '/skills/css.png' },
+//         ],
+//     },
+// ];
 
 const About: React.FC = () => {
     // Tipar adecuadamente la función getData
