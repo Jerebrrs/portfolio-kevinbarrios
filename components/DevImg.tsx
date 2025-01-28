@@ -8,7 +8,10 @@ interface ImageProps {
 const DevImg: React.FC<ImageProps> = ({ ImgSrc = '', containerStyles = '' }) => {
     return (
         <div className={`${containerStyles}`}>
-            <Image src={ImgSrc} fill priority alt='' />
+            <Image 
+            src={ImgSrc} 
+            alt='' 
+            width={450} height={400}/>
         </div>
     )
 }

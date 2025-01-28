@@ -113,3 +113,12 @@ body {
   .swiper-pagination-bullet {
   @apply bg-primary;
 }
+
+@keyframes float-skill {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.animate-float-skill {
+  animation: float-skill 3s ease-in-out infinite;
+}

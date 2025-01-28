@@ -92,6 +92,23 @@ export const projectData: ProjectData[] = [
     ],
   },
   {
+    image: "/work/edtools.png",
+    category: "Fullstack",
+    name:"Edtools",
+    subtitle: "Plataforma que crea pruebas personalizadas y corrige examenes con IA.",
+    description:
+      "Edtools crea pruebas personalizadas que se adapten a cada necesidad: Ayudando a estudiantes con evaluaciones específicas, facilita a los docentes el diseño rápido de pruebas profesionales, y permite a las empresas medir habilidades clave con pruebas hechas a la medida y previamente usadas en el sistema educativo ",
+    link: "https://edtools.com.co",
+    github: "https://login.microsoftonline.com/f82a4f6b-9e6c-4be6-ac74-2814a355d50c/oauth2/authorize?client%5Fid=00000003%2D0000%2D0ff1%2Dce00%2D000000000000&response%5Fmode=form%5Fpost&response%5Ftype=code%20id%5Ftoken&resource=00000003%2D0000%2D0ff1%2Dce00%2D000000000000&scope=openid&nonce=7B764E5D3AB922ED1A156069C01331A2840C04DD9EFEEFE0%2D0DBDB8D3B3063368EA1C31A8D02FB22D64A0D42B65E90CFC6AFF6D76919418C7&redirect%5Furi=https%3A%2F%2Fedtool%2Dmy%2Esharepoint%2Ecom%2F%5Fforms%2Fdefault%2Easpx&state=OD0w&claims=%7B%22id%5Ftoken%22%3A%7B%22xms%5Fcc%22%3A%7B%22values%22%3A%5B%22CP1%22%5D%7D%7D%7D&wsucxt=1&cobrandid=11bd8083%2D87e0%2D41b5%2Dbb78%2D0bc43c8a8e8a&client%2Drequest%2Did=c97c7ba1%2De04a%2D7000%2Dc539%2Da6af7c50ca44",
+    skills: [
+      { image: "/skills/react.png" },
+      { image: "/skills/redux.png" },
+      { image: "/skills/javascript.png" },
+      { image: "/skills/nodejs.png" },
+      { image: "/skills/postgres.png" },
+    ],
+  },
+  {
     image: "/work/liga.png",
     category: "Fullstack",
     name: "Liga Paceña de Futbool",
@@ -105,6 +122,21 @@ export const projectData: ProjectData[] = [
       { image: "/skills/redux.png" },
       { image: "/skills/javascript.png" },
       { image: "/skills/nodejs.png" },
+      { image: "/skills/postgres.png" },
+    ],
+  },
+  {
+    image: "/work/volt.png",
+    category: "Java",
+    name: "Clinica VOLT",
+    subtitle: "Este proyecto consiste en un software de gestión de consultas entre pacientes y doctores, desarrollado para la clínica Volt.",
+    description:
+      " Su objetivo es optimizar y gestionar eficientemente el agendamiento de consultas médicas mediante funcionalidades clave como: Gestión de usuarios: Permite crear, listar, editar y eliminar pacientes y doctores, incluyendo soporte para paginación. Lógica de negocio avanzada para la gestión de consultas: Las consultas solo pueden agendarse con al menos 5 horas de anticipación. Las consultas no pueden cancelarse con menos de 40 minutos de anticipación. Si el doctor seleccionado ya tiene una consulta en la misma fecha y horario, el sistema redirige automáticamente al paciente a otro doctor de la misma especialidad disponible. El software fue desarrollado utilizando Java y Spring Boot e incluye las siguientes tecnologías y herramientas: Spring Security: Implementación de autenticación y autorización. Validaciones: Validación de datos para garantizar la integridad y consistencia de la información. JPA (Java Persistence API): Para la gestión de la base de datos PostgreSQL. Flyway: Control de versiones y migraciones de la base de datos. Hibernate: Uso eficiente de ORM. Lambdas y Streams: Para una programación más funcional y moderna en la manipulación de datos.",
+    link: "https://github.com/Jerebrrs/Volt-Clinica",
+    github: "https://github.com/Jerebrrs/Volt-Clinica",
+    skills: [
+      { image: "/skills/java.png" },
+      { image: "/skills/spring.png" },
       { image: "/skills/postgres.png" },
     ],
   },
@@ -276,6 +308,7 @@ export const skillsData: QualificationSection[] = [
       { name: "Docker", image: "/skills/docker.png" },
       { name: "Kubernetes", image: "/skills/kubernetes.png" },
       { name: "Aws", image: "/skills/aws.png" },
+      { name: "Spring Boot", image: "/skills/spring.png" },
     ],
   },
   {

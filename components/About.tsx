@@ -5,27 +5,11 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from './ui/tabs';
 import Image from 'next/image';
 import { QualificationSection, skillsData } from '@/app/data/data';
 
-// Define el tipo para la información personal
+
 interface InfoData {
     text?: string;
-    icon?: React.ReactNode;  // El tipo adecuado para un elemento JSX
+    icon?: React.ReactNode; 
 }
-
-// Define el tipo para los datos de educación y experiencia
-// interface QualificationItem {
-//     academia?: string;
-//     company?: string;
-//     name?: string;
-//     image?: string;
-//     role?: string;
-//     years?: string;
-// }
-
-// interface QualificationSection {
-//     title: string;
-//     data: QualificationItem[];
-// }
-
 
 const infoData: InfoData[] = [
     { icon: <User2 size={20} />, text: 'Kevin Jeremias Barrios' },
@@ -41,13 +25,18 @@ const qualificationData: QualificationSection[] = [
         title: 'Educacion',
         data: [
             {
+                academia: 'Universidad Tecnologica Nacional - UTN',
+                role: 'Tecnico Universitario en Programación.',
+                years: 'Ene 2025 - Actualidad.',
+            },
+            {
                 academia: 'Alura Latam + Oracle',
-                role: 'Desarrollador Backend Java + Oracle',
-                years: 'Jun 2024 - Actualidad.',
+                role: 'Desarrollador Backend Java + Oracle.',
+                years: 'Jun 2024 - Ene 2025.',
             },
             {
                 academia: 'Soy Henry',
-                role: 'Desarrollador Web Full Stack',
+                role: 'Desarrollador Web Full Stack.',
                 years: 'Sep 2023 - Abr 2024',
             },
             {
@@ -61,9 +50,9 @@ const qualificationData: QualificationSection[] = [
         title: 'Experiencia',
         data: [
             {
-                company: 'J&J Software',
+                company: 'Edtools',
                 role: 'Full Stack Web Developer',
-                years: 'Jul 2024 - Actualidad.',
+                years: 'Nov 2024 - Dic 2024.',
             },
             {
                 company: 'Cubix & Bets Casino',
@@ -84,34 +73,7 @@ const qualificationData: QualificationSection[] = [
     },
 ];
 
-// const skillsData: QualificationSection[] = [
-//     {
-//         title: 'Backend',
-//         data: [
-//             { name: 'Nest', image: '/nestjs.png' },
-//             { name: 'Java', image: '/skills/java.png' },
-//             { name: 'Typescript', image: '/skills/typescript.png' },
-//             { name: 'Javascipt', image: '/skills/javascript.png' },
-//             { name: 'Typescript', image: '/skills/Graphql.png' },
-//             { name: 'Postgres', image: '/skills/postgres.png' },
-//             { name: 'MongoDb', image: '/skills/mongo.png' },
-//             { name: 'Docker', image: '/skills/docker.png' },
-//             { name: 'Kubernetes', image: '/skills/kubernetes.png' },
-//             { name: 'Aws', image: '/skills/aws.png' },
-//         ],
-//     },
-//     {
-//         title: 'Frontend',
-//         data: [
-//             { name: 'NextJs', image: '/skills/nextjs.png' },
-//             { name: 'React', image: '/skills/react.png' },
-//             { name: 'Redux', image: '/skills/redux.png' },
-//             { name: 'Talwing', image: '/skills/talwing.png' },
-//             { name: 'HTML', image: '/skills/html.png' },
-//             { name: 'CSS', image: '/skills/css.png' },
-//         ],
-//     },
-// ];
+
 
 const About: React.FC = () => {
     // Tipar adecuadamente la función getData
@@ -125,7 +87,7 @@ const About: React.FC = () => {
                 <h2 className='section-title mb-8 xl:mb-16 text-center mx-auto'>Sobre Mi</h2>
                 <div className='flex flex-col xl:flex-row'>
                     <div className=' hidden xl:flex flex-1 relative'>
-                        <DevImg containerStyles='bg-about_shape_light dark:bg-about_shape_dark w-[555px] h-[556px] bg-no-repeat relative'
+                        <DevImg containerStyles='bg-hero_shape w-[480px] h-[480px] bg-no-repeat relative'
                             ImgSrc='/perfil-remove.png' />
                     </div>
                     <div className='flex-1'>
@@ -140,8 +102,7 @@ const About: React.FC = () => {
                                     <div className='text-center xl:text-left'>
                                         <h3 className='h3 mb-4'>Full Stack Developer</h3>
                                         <p className='subtitle max-w-xl mx-auto xl:max-0'>
-                                            Tengo experiencia tanto en el Frontend como en el Backend.
-                                            En el Frontend, he trabajado con tecnologías como Next.js, React, Redux, y Tailwind CSS, entre otras. Sin embargo, mi enfoque principal es el Backend, donde tengo experiencia con Node.js, NestJS, bases de datos relacionales y no relacionales, Docker, Kubernetes, entre otras herramientas. Actualmente, estoy profundizando mis conocimientos en Java para enfocarme aún más en el desarrollo Backend.
+                                        En Frontend, manejo tecnologías como JavaScript, TypeScript y frameworks modernos como React y Next.js, además de trabajar con estilos usando CSS y Tailwind. En Backend, mi especialización está en Java y Spring Boot, complementada con experiencia en NestJS, Node.js, Express.js y GraphQL. También tengo conocimientos en bases de datos como SQLite, PostgreSQL y MongoDB, junto con herramientas clave como Docker y Google Cloud para despliegues en la nube.
                                         </p>
                                         <div className="grid xl:grid-cols-2 gap-4 mb-12">
                                             {infoData.map((item, index) => {
