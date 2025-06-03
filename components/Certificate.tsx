@@ -24,7 +24,7 @@ const Certificate = () => {
                     spaceBetween={30}
                     modules={[Pagination]}
                     pagination={{ clickable: true }}
-                    className='h-auto'
+                    className='h-auto pb-10 relative'
                 >
                     {certificateData.map((item, index) => (
                         <SwiperSlide key={index}>
@@ -45,10 +45,6 @@ const Certificate = () => {
                                             <Link2Icon className="text-white" />
                                         </Link>
                                     </div>
-
-
-
-
                                 </div>
                             </Card>
                         </SwiperSlide>

@@ -122,3 +122,9 @@ body {
 .animate-float-skill {
   animation: float-skill 3s ease-in-out infinite;
 }
+.swiper-pagination {
+  position: relative !important;
+  bottom: 0 !important;
+  margin-top: 1rem;
+  text-align: center;
+}

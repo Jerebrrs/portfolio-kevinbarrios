@@ -25,13 +25,13 @@ const ProjectDetails: React.FC<ProjectCardProps> = ({ project }) => {
           className="w-full h-full p-4 flex flex-col items-center justify-center hover:bg-accent hover:text-accent-foreground transition-colors"
         >
           <h4 className="text-xl font-semibold mb-2">{project.name}</h4>
-          <p className="text-muted-foreground">{project.subtitle}</p>
+          <p className="text-muted-foreground text-xs">{project.subtitle}</p>
         </Button>
       </DialogTrigger>
       <DialogContent className="sm:max-w-[700px] lg:max-w-[900px]">
         <DialogHeader>
           <DialogTitle className="text-3xl font-bold">{project.name}</DialogTitle>
-          <DialogDescription className="text-lg">{project.subtitle}</DialogDescription>
+          <DialogDescription className="text-sm">{project.subtitle}</DialogDescription>
         </DialogHeader>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-4">
           <div className="order-2 lg:order-1">

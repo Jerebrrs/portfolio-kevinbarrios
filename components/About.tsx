@@ -48,28 +48,28 @@ const qualificationData: QualificationSection[] = [
     },
     {
         title: 'Experiencia',
-        data: [
-            {
-                company: 'Edtools',
-                role: 'Full Stack Web Developer',
-                years: 'Nov 2024 - Dic 2024.',
-            },
-            {
-                company: 'Cubix & Bets Casino',
-                role: 'Full Stack Web Developer',
-                years: 'Jun 2024- Ags 2024',
-            },
-            {
-                company: 'No Country',
-                role: 'Desarrollador Web Backend',
-                years: 'May 2024- Ags 2024',
-            },
-            {
-                company: 'Soy Henry',
-                role: 'Full Stack Web Developer',
-                years: 'Sep 2023- Abr2024',
-            },
-        ],
+          data: [
+      {
+        company: "Bombieri",
+        role: "Full Stack Web Developer",
+        years: "Mar 2025 - Jun 2025",
+      },
+      {
+        company: "Edtools",
+        role: "Full Stack Web Developer",
+        years: "Dic 2024- Feb 2025",
+      },
+      {
+        company: "Sparrow Store",
+        role: "Emprendedor",
+        years: "Dic 2023 - Actualidad",
+      },
+      {
+        company: "Selplast SA",
+        role: "Administrador",
+        years: "May 2018 - Oct 2023",
+      },
+    ],
     },
 ];
 
@@ -82,7 +82,7 @@ const About: React.FC = () => {
     };
 
     return (
-        <section className="xl:h-[860px] pb-12 xl:py-24">
+        <section className="xl:h-[860px] pb-12 xl:py-24 py-5">
             <div className='container mx-auto'>
                 <h2 className='section-title mb-8 xl:mb-16 text-center mx-auto'>Sobre Mi</h2>
                 <div className='flex flex-col xl:flex-row'>
@@ -167,7 +167,7 @@ const About: React.FC = () => {
                                                     </h4>
                                                 </div>
                                                 <div>
-                                                    <div className='flex flex-col gap-y-8'>
+                                                    <div className='flex flex-col gap-y-4'>
                                                         {getData(qualificationData, 'Educacion')?.data.map((item, index) => {
                                                             const { role, years, academia } = item;
 
